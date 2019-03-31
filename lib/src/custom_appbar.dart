@@ -18,7 +18,7 @@ class CustomAppBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            //goBack,
+            //goBack, should show the button to go back to the last screen
             titleAndSub(),
             circleAvatar(),
           ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_photify/src/main_background.dart';
 import 'package:flutter_photify/src/painter_tools/size_util.dart';
+import 'src/bottom_bar.dart';
 import 'src/photos_list.dart';
 import 'src/custom_appbar.dart';
 
@@ -26,10 +27,11 @@ class MyApp extends StatelessWidget {
               photoUrl: 'https://randomuser.me/api/portraits/men/11.jpg',
             ),
             PhotosList(),
+            BottomBar(),
           ],
         ),
       ),
     );
   }
-  
+
 }

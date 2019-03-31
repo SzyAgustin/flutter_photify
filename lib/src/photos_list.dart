@@ -19,11 +19,12 @@ class PhotosList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //for some reason, it is separating the starting of the grid too much from the beggining of the list.
     return Positioned(
-      top: 120,
+      top: 110,
       right: 0,
       left: 0,
-      bottom: 50,
+      bottom: 0,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: photosList(context),
@@ -33,7 +34,7 @@ class PhotosList extends StatelessWidget {
 
   Widget photosList(BuildContext context) {
     return GridView.count(
-      childAspectRatio: 0.75,
+      childAspectRatio: 0.72,
       crossAxisCount: 2,
       crossAxisSpacing: 10,
       children: List.generate(photos.length, (i) {
