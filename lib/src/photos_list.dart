@@ -2,20 +2,19 @@ import 'package:flutter/material.dart';
 
 class PhotosList extends StatelessWidget {
   final List<String> photos = [
-    'a',
-    'b',
-    'c',
-    'd',
+    'Amazon Forest',
+    'The Bahamas',
+    'Australia',
+    'The Volcanos',
     'e',
     'f',
     'g',
     'h',
     'i',
     'j',
-    'k',
-
-  ]; //should be a list of images (or maybe urls of images).
-  //After, should be a stream probably
+    'k'
+  ];
+  //After, should be a stream, containing image, name, description, date, etc etc
 
   @override
   Widget build(BuildContext context) {
@@ -48,11 +47,24 @@ class PhotosList extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 8.0),
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Colors.brown[300],
           borderRadius: BorderRadius.circular(20),
         ),
         child: Center(
-          child: Text(photos[i]),
+          child: Stack(
+            children: <Widget>[
+              Positioned(
+                bottom: 25,
+                right: 20,
+                left: 20,
+                child: Text(photos[i],
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600)),
+              ),
+            ],
+          ),
         ),
       ),
     );
