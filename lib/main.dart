@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_photify/src/main_background.dart';
+import 'package:flutter_photify/src/painter_tools/size_util.dart';
 import 'src/custom_appbar.dart';
 
 void main() => runApp(MyApp());
@@ -31,10 +32,14 @@ class MyApp extends StatelessWidget {
   }
 
   Widget photosList() {
-    return ListView(
-      children: <Widget>[
-        
-      ],
+    return Positioned(
+      top: 120,
+      right: 0,
+      left: 0,
+      bottom: 0,
+      child: ListView(
+        children: <Widget>[],
+      ),
     );
   }
 
