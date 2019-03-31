@@ -23,17 +23,17 @@ class CurvesPainter extends CustomPainter {
       ..strokeWidth = 8.0;
 
     Path opacityPath = Path();
-    opacityPath.lineTo(0.0, size.height * 0.9);
-    opacityPath.lineTo(size.width, size.height * 0.7);
+    opacityPath.lineTo(0.0, size.height * 0.85);
+    opacityPath.lineTo(size.width, size.height * 0.65);
     opacityPath.lineTo(size.width, 0.0);
     opacityPath.close();
     canvas.drawPath(opacityPath, paint);
 
     Path path = Path();
-    path.moveTo(0.0, size.height * 0.9);
+    path.moveTo(0.0, size.height * 0.85);
     path.lineTo(0.0, size.height);
     path.lineTo(size.width, size.height);
-    path.lineTo(size.width, size.height * 0.7);
+    path.lineTo(size.width, size.height * 0.65);
     path.close();
 
     paint.color = Colors.grey[700];
