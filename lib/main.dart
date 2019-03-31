@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_photify/src/main_background.dart';
 import 'package:flutter_photify/src/painter_tools/size_util.dart';
+import 'src/photos_list.dart';
 import 'src/custom_appbar.dart';
 
 void main() => runApp(MyApp());
@@ -24,26 +25,11 @@ class MyApp extends StatelessWidget {
               subtitle: "This is the home page",
               photoUrl: 'https://randomuser.me/api/portraits/men/11.jpg',
             ),
-            photosList(),
+            PhotosList(),
           ],
         ),
       ),
     );
   }
-
-  Widget photosList() {
-    return Positioned(
-      top: 120,
-      right: 0,
-      left: 0,
-      bottom: 0,
-      child: ListView(
-        children: <Widget>[],
-      ),
-    );
-  }
-
-  Widget appBar() {
-    return Text("Home");
-  }
+  
 }
