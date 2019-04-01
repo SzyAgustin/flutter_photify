@@ -7,17 +7,18 @@ import '../custom_appbar.dart';
 class FreelancerMedia extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
-        MainBackground(),
-        CustomAppBar(
-          title: "Home",
-          subtitle: "This is the home page",
-          photoUrl: 'https://randomuser.me/api/portraits/men/11.jpg',
-        ),
-        PhotosList(),
-        BottomBar(),
-      ],
+    return Scaffold(
+      body: Stack(
+        children: <Widget>[
+          CustomAppBar(
+            title: "Home",
+            subtitle: "This is the home page",
+            photoUrl: 'https://randomuser.me/api/portraits/men/11.jpg',
+          ),
+          PhotosList(),
+          BottomBar(),
+        ],
+      ),
     );
   }
 }

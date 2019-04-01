@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'src/screens/freelancer_media.dart';
+import 'package:flutter_photify/src/main_background.dart';
+import 'package:flutter_photify/src/screens/home.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +15,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: FreelancerMedia(),
+        body: Stack(
+          children: [
+            MainBackground(),
+            HomePage(),
+          ],
+        ),
       ),
     );
   }
