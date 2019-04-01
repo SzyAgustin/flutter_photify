@@ -38,22 +38,6 @@ class CurvesPainter extends CustomPainter {
 
     paint.color = Colors.grey[700];
     canvas.drawPath(path, paint);
-
-
-    // var circle = Offset(SizeUtil.getAxisX(220), SizeUtil.getAxisY(410));
-    // paint.color = Colors.grey[700];
-    // canvas.drawCircle(circle, SizeUtil.getAxisBoth(90), paint);
-    // // paint.color = Colors.black54;
-    // // canvas.drawCircle(circle, SizeUtil.getAxisBoth(70), paint);
-
-    // var circleToRect = Offset(SizeUtil.getAxisX(330), SizeUtil.getAxisY(490));
-    // var rect = Rect.fromCircle(center: circleToRect, radius: 70);
-    // paint.color = Colors.grey[700];
-    // canvas.drawRect(rect, paint);
-
-    // var rect2 = Rect.fromCircle(center: circleToRect, radius: 50);
-    // paint.color = Colors.black54;
-    // canvas.drawRect(rect2, paint);
   }
 
   @override

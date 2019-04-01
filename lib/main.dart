@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_photify/src/main_background.dart';
-import 'package:flutter_photify/src/painter_tools/size_util.dart';
-import 'src/bottom_bar.dart';
-import 'src/photos_list.dart';
-import 'src/custom_appbar.dart';
+import 'src/screens/freelancer_media.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,20 +14,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: Stack(
-          children: <Widget>[
-            MainBackground(),
-            CustomAppBar(
-              title: "Home",
-              subtitle: "This is the home page",
-              photoUrl: 'https://randomuser.me/api/portraits/men/11.jpg',
-            ),
-            PhotosList(),
-            BottomBar(),
-          ],
-        ),
+        body: FreelancerMedia(),
       ),
     );
   }
-
 }
