@@ -10,6 +10,7 @@ class FreelancerMedia extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: <Widget>[
+          MainBackground(),
           CustomAppBar(
             title: "Home",
             subtitle: "This is the home page",
